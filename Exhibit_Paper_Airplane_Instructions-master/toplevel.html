@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="background-color: #000000;" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Paper Airplane Folding - Top</title>
+<link href="reset.css" rel="stylesheet" type="text/css" />
+<link href="PaperAirplane.css" rel="stylesheet" type="text/css" />
+<link href="toplevel.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var t;
+window.onload=resetTimer;
+document.onmousemove=resetTimer;
+
+function resetTimer()
+{
+	clearTimeout(t);
+	t=setTimeout(goHome,45000) //logs out in 45 seconds
+}
+function goHome()
+{
+	window.location.replace('index.html');
+}
+</script>
+<script type="text/javascript">
+
+function disableSelection(target){
+if (typeof target.onselectstart!="undefined") //IE route
+	target.onselectstart=function(){return false}
+else if (typeof target.style.MozUserSelect!="undefined") //Firefox route
+	target.style.MozUserSelect="none"
+else //All other route (ie: Opera)
+	target.onmousedown=function(){return false}
+target.style.cursor = "default"
+}
+
+</script>
+</head>
+
+<body ONLOAD="resetTimer()">
+<div id="site_wrapper">
+    <div id="innerContents">
+		<div id="OSCLogo"><img width="100%" height="100%" src ="img/OSCLogoSmall.png"></div>
+    	  <img width="100%" height="100%" src ="video/CloudsPoster.png">	
+         	<div id="menuBanner">
+            	<h1 class="toplevel title">CHOOSE A DESIGN BELOW</h1>
+                <div id="underline" class="withunderline"></div>
+                <h2 class="instructions center">CENTER INSTRUCTIONS</h2>
+            </div>
+			<div id="menu_L">
+    			<div id="videoButtonFrame">
+					<div id="tinyVideo">
+						<video loop width="426" height="240" autoplay="autoplay" poster="none.jpg">
+							<source src="video/arrowPrev.mp4" type="video/mp4"/>
+						</video>
+					</div>
+					<div class="vidButton" ><a href="design1.html" class="vidButton_text menuFontSize">Arrow</a></div>
+				</div>
+    			<div id="videoButtonFrame">
+					<div id="tinyVideo">
+						<video loop width="426" height="240" autoplay="autoplay" poster="none.jpg">
+							<source src="video/deltaPrev.mp4" type="video/mp4"/>
+						</video>
+					</div>
+                  <div class="vidButton" ><a href="design3.html" class="vidButton_text menuFontSize">Delta</a></div>
+                </div>
+				</div>
+			<div id="menu_R">
+				<div id="videoButtonFrame">
+				<div id="tinyVideo">
+						<video loop width="426" height="240" autoplay="autoplay" poster="none.jpg">
+							<source src="video/dartPrev.mp4" type="video/mp4"/>
+						</video>
+					</div>
+                  <div class="vidButton" ><a href="design2.html" class="vidButton_text menuFontSize">Dart</a></div>
+				  
+                </div>
+    			<div id="videoButtonFrame">
+					<div id="tinyVideo">
+						<video loop width="426" height="240" autoplay="autoplay" poster="none.jpg">
+							<source src="video/spadePrev.mp4" type="video/mp4"/>
+						</video>
+					</div>
+                  <div class="vidButton" ><a href="design4.html" class="vidButton_text menuFontSize">Spade</a></div>
+                </div>
+				</div>
+       <div class="button" id="startOverButton" ><a href="index.html" class="startover default_button_text">Start Over</a></div>
+       </div>
+    </div>
+</div>
+    
+</div>
+</body>
+<script type="text/javascript">
+disableSelection(document.body) //disable text selection on entire body of page
+</script>
+</html>

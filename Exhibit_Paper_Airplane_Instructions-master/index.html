@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="background-color: #000000;" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Paper Airplane Folding</title>
+<link href="reset.css" rel="stylesheet" type="text/css" />
+<link href="PaperAirplane.css" rel="stylesheet" type="text/css" />
+<link href="index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function disableSelection(target){
+if (typeof target.onselectstart!="undefined") //IE route
+	target.onselectstart=function(){return false}
+else if (typeof target.style.MozUserSelect!="undefined") //Firefox route
+	target.style.MozUserSelect="none"
+else //All other route (ie: Opera)
+	target.onmousedown=function(){return false}
+target.style.cursor = "default"
+}
+</script>
+
+</head>
+
+<body>
+<div id="site_wrapper">
+  <div id="innerContents">
+     <div id="OSCLogo"><img width="100%" height="100%" src ="img/OSCLogoSmall.png"></div>
+        <div class="button" id="enterButton">
+        <a href="toplevel.html" class="enter start_button_text">Push HERE to Begin</a>
+        </div>
+		<div id="BGVideo">
+			<video loop width="100%" height="100%" autoplay="autoplay" poster="video/CloudsPoster.png">
+			<source src="video/Clouds.mp4" type="video/mp4"/>
+		</div>       
+		<div id="storyBanner">
+			<p>PAPER AIRPLANE FOLDING INSTRUCTIONS</p>
+    </div>
+  </div> 
+</div>
+</body>
+<script type="text/javascript">
+disableSelection(document.body) //disable text selection on entire body of page
+</script>
+</html>

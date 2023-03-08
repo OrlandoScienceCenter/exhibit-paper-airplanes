@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="background-color: #000000;>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Paper Air Plane  Instruction</title>
+<link href="reset.css" rel="stylesheet" type="text/css" />
+<link href="PaperAirplane.css" rel="stylesheet" type="text/css" />
+<link href="design.css" rel="stylesheet" type="text/css" />
+<script src='js/media-player.js'></script>
+<script type="text/javascript">
+var t;
+window.onload=resetTimer;
+document.onmousemove=resetTimer;
+
+function resetTimer()
+{
+	clearTimeout(t);
+	t=setTimeout(goHome,180000) //logs out in 3 minutes
+}
+function goHome()
+{
+	window.location.replace('index.html');
+}
+</script>
+
+<script>
+<script type="text/javascript" language="JavaScript">
+function disableText(e){
+  return false;
+}
+function reEnable(){
+  return true;
+}
+//For browser IE4+
+document.onselectstart = new Function ("return false");
+ 
+//For browser NS6
+if (window.sidebar){
+  document.onmousedown = disableText;
+  document.onclick = reEnable;
+}
+</script>
+
+<script>
+// tell the mediaplayer.js what design we're on so the next/prev work right
+var design = 'spade';
+var totalvids = 8; // set for each one
+</script>
+
+</head>
+<body ONLOAD="resetTimer()">
+<div id="site_wrapper">
+    <div id="innerContents">
+    <div class="button" id="startOverButton" ><a href="toplevel.html" class="startover default_button_text">Back</a></div>
+	<div id="OSCLogo"><a href="index.html"><img width="100%" height="100%" src ="img/OSCLogoSmall.png"></a></div>
+    	  <img width="100%" height="100%" src ="video/CloudsPoster.png">	
+	<div id='media-player'>
+		<video id='media-video' controls autoplay=autoplay>
+			<source src='video\fullvids\spade\step1.mp4' type='video/mp4'>
+		</video>
+	</div>
+	<div id='media-controls'>
+		<div class = "transportControls">
+			<div class="button previousButton default_button_text" id="previousButton" onclick='prevVideo();'>Previous</div>
+			<div class="button default_button_text replayButton" id="replayButton" onclick='replayMedia();'>Replay</div>
+			<div class="button default_button_text nextButton" id="nextButton"  onclick='nextVideo();'>Next</div>
+		</div>
+	</div>
+		<div id='media-play-list'>
+			<h2>Instructions</h2>
+			<div id='underline' class="withunderline"></div>
+			<ul id='play-list'>
+				<li onclick='loadVideo("video/fullvids/spade/step1.mp4");'><div class="playlist_button_text">Step 1</div></li>
+				<li onclick='loadVideo("video/fullvids/spade/step2.mp4");'><div class="playlist_button_text">Step 2</div></li>
+				<li onclick='loadVideo("video/fullvids/spade/step3.mp4");'><div class="playlist_button_text">Step 3</div></li>
+				<li onclick='loadVideo("video/fullvids/spade/step4.mp4");'><div class="playlist_button_text">Step 4</div></li>
+				<li onclick='loadVideo("video/fullvids/spade/step5.mp4");'><div class="playlist_button_text">Step 5</div></li>
+				<li onclick='loadVideo("video/fullvids/spade/step6.mp4");'><div class="playlist_button_text">Step 6</div></li>
+				<li onclick='loadVideo("video/fullvids/spade/step7.mp4");'><div class="playlist_button_text">Step 7</div></li>
+				<li onclick='loadVideo("video/fullvids/spade/step8.mp4");'><div class="playlist_button_text">Step 8</div></li>
+				</ul>
+		</div>
+	</div>
+   	</div>
+</div>
+</body>
+</html

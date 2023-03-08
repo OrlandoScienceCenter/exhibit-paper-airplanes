@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#menuBanner{
+	/*border: 0px solid black;*/
+	position: absolute;
+	top: 5%;
+	left: 15%;
+	width: 72%;
+	height: 18%;
+}
+
+#menu_L {
+	border: 0px solid black;
+	position: absolute;
+	top: 25%;
+	left: 5%;
+	width: 40%;
+	height: 68%;
+	display: block;
+	padding: 3%;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+		  }
+#menu_R {
+	border: 0px solid black;
+	position: absolute;
+	top: 25%;
+	left: 47%;
+	width: 40%;
+	height: 68%;
+	display: block;
+	padding: 3%;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+		  }
+.menuFontSize {
+	font-size: 32px;
+}
+#tinyVideo {
+    border: 1px solid #000000;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	z-index: 5;
+	display: table-cell;
+	}
+
+		
+	
+#videoButtonFrame{
+	background: solid rgba(0, 0, 0, 0);
+    border: 20px solid rgba(0, 0, 0, 0.3);
+	position: relative;
+	width:  466px;
+	height: 280px;
+	margin-bottom: 2%;
+	margin-left: 22.5%;
+	z-index: 100;
+	border-radius: 20px 20px;
+	-webkit-border-radius: 20px 20px;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+	
+/* videoButtons */
+.vidButton {
+   position: absolute;
+   border: 0px solid #40371f;
+   background: rgba(0,0,0,0);
+   height: 239px;
+   width: 424px;
+   top: 0px;
+   z-index: 60;
+   
+}
+.vidButton_text {
+	position: relative;
+	text-shadow: 0 2px 4px rgba(0,0,0,.75);
+	color: white;
+    height: 240px;
+    width: 424px;
+	font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+	text-decoration: none;
+	vertical-align: bottom;
+	display: table-cell;
+	text-align: center;
+	padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+	 z-index: 100;
+}
+.vidButton_text:hover {
+   background-color:rgba(0,0,0,.20);
+	display: table-cell;
+	text-align: center;
+	padding: 20px;
+   vertical-align: bottom;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+   }
+.vidButton_text:active {
+   background-color:rgba(0,0,0,.50);
+   	display: table-cell;
+	text-align: center;
+	padding: 20px;
+   vertical-align: bottom;
+   } 
+   
